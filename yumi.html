@@ -4,10 +4,17 @@
     
     <title>💗 Love you 💗 My Dear yumi💗</title>
     <style type="text/css">
-      body {
-        margin: 0;
-        overflow: hidden;
-        background: #000;
+     body{
+                /* 加载背景图片 */
+        background-image: url(http://phototj.photo.store.qq.com/psc?/V14WN93H0nTnYC/ruAMsa53pVQWN7FLK88i5jBy*yAAtgQKd1F349mA8WpE*UxsxM6C6Fpo5KfRjeU3Nwnm0P2sRsz*BiDjO*Ya1M0ZL8rImboGtq*HmO69WWY!/mnull&bo=OASfBTgEnwUBByA!&rf=photolist&t=5);
+        /* 背景图垂直、水平均居中 */
+        background-position: center center;
+                /* 背景图不平铺 */
+                background-repeat: no-repeat;
+                /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+                background-attachment: fixed;  /*此条属性必须设置否则可能无效*/
+                /* 让背景图基于容器大小伸缩 */
+                background-size: cover;
       }
       canvas {
         position: absolute;
@@ -97,7 +104,6 @@
         font-size: 46px;
         color: #ea80b0;
       }
-img{height: auto; width: auto\9; width:100%;}
     </style>
   </head>
   <body>
@@ -500,16 +506,4 @@ img{height: auto; width: auto\9; width:100%;}
 
       // 参考：https://blog.csdn.net/weixin_57038822/article/details/121644240
     </script>
-      body{
-                /* 加载背景图片 */
-        background-image: url(http://phototj.photo.store.qq.com/psc?/V14WN93H0nTnYC/ruAMsa53pVQWN7FLK88i5pJfIY5IPTAnts6*t0VpgniH6dncCV0HmWXvoDG90zCzrF8u.OV*CL9z4dJXeV9FEVWwMSSoU8YW9MpD4wJOkhI!/mnull&bo=0AIcBNACHAQBByA!&rf=photolist&t=5);
-        /* 背景图垂直、水平均居中 */
-        background-position: center center;
-                /* 背景图不平铺 */
-                background-repeat: no-repeat;
-                /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
-                background-attachment: fixed;  /*此条属性必须设置否则可能无效*/
-                /* 让背景图基于容器大小伸缩 */
-                background-size: cover;
-      }
 </body></html>
